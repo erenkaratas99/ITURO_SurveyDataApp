@@ -8,7 +8,7 @@ import pandas as pd
 import glob
 
 
-path = r'C:\\Users\\KULLANICI\\Desktop\\İTÜRO\\ITURO22\\İTÜRO_ANKET\\survey\\python' # use your path
+path = r'...path...' # use your path
 all_files = glob.glob(path + "\*.csv")
 
 li = []
@@ -30,7 +30,7 @@ df.role = df.role.fillna('unknown')
 df.purpose = df.purpose.fillna('unknown')
 
 #%%
-writer = pd.ExcelWriter('C:\\Users\\KULLANICI\\Desktop\\İTÜRO\\ITURO22\\İTÜRO_ANKET\\survey\\python\\general_info.xlsx')
+writer = pd.ExcelWriter('..path..\general_info.xlsx')
 df.to_excel(writer,'ITURO22')
 writer.save()
 #%%
